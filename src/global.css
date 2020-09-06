@@ -1,0 +1,17 @@
+/* 所有操作系统，浏览器滚动条的宽度都是14-19像素，如果发现页面差十几个像素了，基本都是滚动条导致的 */
+/* 有滚动条怎么办？body --→ overflow:hidden */
+body {
+    overflow: hidden;
+}
+body > .page {
+    display: flex;
+    flex-wrap: wrap;
+}
+body > .page > section {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+}
+
+/* 可以在CSS里引入其他CSS,语法如下,但是不推荐,因为这种引入性能很低,还是要从JS里引入 */
+/* @import */

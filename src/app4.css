@@ -1,0 +1,19 @@
+#app4 {}
+#app4 .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+#app4 .circle.active {
+    animation: changeColor 2s infinite linear alternate;
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}
